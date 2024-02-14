@@ -25,16 +25,15 @@
 <body class="">
     <main class="min-h-screen bg-[#0d0921] bg-[url(images/background.png)] bg-no-repeat bg-center">
         <!-- Home section -->
-        <section class="home flex min-h-screen items-center justify-center hidden">
+        <section class="home flex min-h-screen items-center justify-center ">
             <div class="flex flex-col items-center justify-center gap-8">
                 <h1 class="anton-regular text-9xl text-white uppercase">Alpha Clash Pro</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus illum dolore exercitationem optio
-                    facere pariatur.</p>
-                <button class="btn btn-primary bg-white text-black">Play Now</button>
+                <p class="text-white">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+                <button class="btn btn-primary text-white" onclick="play()">Play Now</button>
             </div>
         </section>
         <!-- Playground start -->
-        <section class="play-ground">
+        <section class="play-ground hidden">
             <div class="flex flex-col justify-center items-center gap-20 p-20">
                 <!-- artboard -->
                 <div
@@ -96,10 +95,19 @@
             </div>
         </section>
         <!-- Playground end -->
-        <section class="score">
-            <img src="" alt="">
+        <!-- final score section -->
+        <section class="score min-h-screen flex justify-center items-center hidden">
+            <div class="text-center bg-[#ffffff33] text-white p-8 space-y-6 rounded-xl">
+                <div class="text-5xl font-extrabold">
+                    <span>Score : </span><span>14</span>
+                </div>
+                <button class="btn btn-primary">Play Again</button>
+                <p class="">Practice will make you pro</p>
+            </div>
         </section>
     </main>
+    <!-- script files -->
+    <script src="scripts/alpha.js"></script>
 </body>
 
 </html>
